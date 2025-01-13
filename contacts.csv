@@ -1,0 +1,21 @@
+﻿name;surname;email;phone_number;contact_type;country;region;city;street;house;postal_code;card_number;coupon_code
+John;Smith;john.smith@gmail.com;1234567890;CUSTOMER;USA;California;Los Angeles;Hollywood Boulevard;120;90001;1234-5678-9012;AUTUMN2024
+Emma;Brown;emma.brown@yahoo.com;1987654321;CUSTOMER;USA;Texas;Dallas;Elm Street;45;75001;5678-1234-9012;WELCOME
+Sophia;Davis;sophia.davis@outlook.com;1789123456;CUSTOMER;Canada;British Columbia;Vancouver;Granville Street;56;V5K1A1;9012-3456-7890;WELCOME
+James;Wilson;james.wilson@mail.com;1678459234;CUSTOMER;Australia;New South Wales;Sydney;George Street;22;2000;2345-6789-0123;AUTUMN2024
+Olivia;Taylor;olivia.t@gmail.com;1554432112;CUSTOMER;Australia;Victoria;Melbourne;Collins Street;33;3000;6789-0123-4567;SPRING2025
+William;Moore;william.moore@aol.com;1347890654;CUSTOMER;UK;England;London;Oxford Street;14;SW1A1AA;4567-1234-6789;WELCOME
+Isabella;Martinez;isabella.m@gmail.com;1112345678;CUSTOMER;Spain;Catalonia;Barcelona;Rambla Street;66;8002;8901-2345-6789;AUTUMN2024
+Ethan;Lee;ethan.lee@hotmail.com;1223344556;CUSTOMER;Spain;Madrid;Madrid;Gran Via Street;88;28013;3456-7890-2345;WINTER2025
+Mia;Anderson;mia.anderson@live.com;1998877665;CUSTOMER;Germany;Bavaria;Munich;Ludwigstraße;99;80333;2345-6789-3456;WELCOME
+Lucas;Fischer;lucas.f@gmail.com;1998877666;CUSTOMER;Germany;Berlin;Berlin;Friedrichstraße;25;10117;8901-2345-6789;AUTUMN2024
+Liam;Nguyen;liam.n@gmail.com;84123456789;CUSTOMER;Vietnam;Ho Chi Minh City;Ho Chi Minh;Nguyen Hue Street;10;700000;5678-1234-6789;SPRING2025
+Chloe;Tran;chloe.tran@gmail.com;84987654321;CUSTOMER;Vietnam;Hanoi;Hanoi;Hoan Kiem Street;19;100000;1234-5678-9012;WELCOME
+Ella;Dupont;ella.dupont@mail.com;33123456789;CUSTOMER;France;Île-de-France;Paris;Champs Elysees Street;33;75008;3456-7890-2345;SPRING2025
+Noah;Blanc;noah.blanc@gmail.com;33987654321;CUSTOMER;France;Provence;Marseille;Vieux Port Street;77;13002;5678-9012-3456;WELCOME
+Ava;Rossi;ava.rossi@hotmail.com;33987633321;CUSTOMER;Italy;Lazio;Rome;Via Nazionale Street;50;184;8901-2345-6789;AUTUMN2024
+Luca;Bianchi;luca.bianchi@gmail.com;33987651121;CUSTOMER;Italy;Lombardy;Milan;Corso Como Street;11;20121;6789-0123-4567;WINTER2025
+Zoe;Smith;zoe.smith@yahoo.com;61234567890;CUSTOMER;Australia;Queensland;Brisbane;Queen Street;27;4000;3456-7890-1234;WELCOME
+Henry;Kim;henry.kim@gmail.com;61555567890;CUSTOMER;South Korea;Seoul;Seoul;Gangnam Boulevard;18;6297;2345-6789-3456;AUTUMN2024
+Emily;Park;emily.park@gmail.com;82234567890;CUSTOMER;South Korea;Busan;Busan;Haeundae Street;8;48094;5678-9012-2345;WELCOME
+plantstore_name;plantstore_surname;email;1111111;CUSTOMER;Lithuania;Vilnius;Vlinius;Ukmerges Street;184;7169;4444-4444-4444;

@@ -1,0 +1,11 @@
+﻿name;category;subcategory;price;current_height;max_height;trans_pod_diam;min_temp;max_temp;fertilizers;humidity;light;supplier_company;manufacturer_company;product_description;product_in_stock
+Ficus Elastica;Indoor Plant;Tree;25.99;0.15;2.0;20;10;30;All-purpose fertilizer;50%;Bright indirect light;Global Supplies Inc;Textile Corp S.p.A;Large-leaf indoor tree perfect for living rooms;150
+Monstera Deliciosa;Indoor Plant;Vine;34.50;0.8;3.0;25;15;28;Liquid fertilizer;60%;Moderate indirect light;Logistics Pro GmbH;Textile Corp S.p.A;Stylish split-leaf vine that adds a tropical vibe;120
+Dracaena Marginata;Indoor Plant;Tree;20.75;1.0;3.0;18;12;32;Slow-release fertilizer;40%;Low to moderate light;Global Supplies Inc;Green Machines Co.;Hardy indoor tree requiring minimal care;80
+Aloe Vera;Outdoor Plant;Succulent;15.30;0.4;0.6;15;5;40;Cactus fertilizer;30%;Bright direct light;Logistics Pro GmbH;Green Machines Co.;Healing plant ideal for skin treatments;200
+Peace Lily;Indoor Plant;Flowering;18.60;0.5;0.3;18;10;26;Flowering plant fertilizer;70%;Low light;Global Supplies Inc;Textile Corp S.p.A;Beautiful flowering plant suitable for offices;90
+Cactus Mix;Outdoor Plant;Succulent;18.60;0.3;0.8;10;5;45;Cactus fertilizer;20%;Full sunlight;Logistics Pro GmbH;Green Machines Co.;Variety of small cacti for outdoor gardens;300
+Areca Palm;Indoor Plant;Tree;30.00;0.5;1.0;30;15;35;Palm fertilizer;50%;Bright indirect light;Global Supplies Inc;Green Machines Co.;Elegant palm perfect for bright spaces;75
+Jade Plant;Outdoor Plant;Succulent;22.50;0.6;1.0;18;10;32;All-purpose fertilizer;40%;Bright indirect light;Logistics Pro GmbH;Textile Corp S.p.A;Compact succulent suitable for containers;110
+Snake Plant;Indoor Plant;Succulent;16.80;0.7;1.0;15;10;30;Slow-release fertilizer;30%;Low light;Global Supplies Inc;Green Machines Co.;Low-maintenance plant for bedrooms;250
+Bonsai Juniper;Outdoor Plant;Tree;45.99;0.3;0.6;15;5;25;Bonsai fertilizer;50%;Bright direct light;Logistics Pro GmbH;Textile Corp S.p.A;Miniature tree ideal for collectors;50

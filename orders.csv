@@ -1,0 +1,15 @@
+﻿customer_name;customer_surname;product_name;quantity;price_added;order_type;supplier_company;delivery_type;delivery_providing_company;order_total;order_status;order_date;expected_delivery_date;payment_method;coupon_code
+John;Smith;Ficus Elastica;2;25,99;CUSTOMER_ORDER;Global Supplies Inc;STANDARD;Fast Delivery Ltd;103,33;PICKED_UP;01.01.2024;10.01.2024;PAYPAL;
+John;Smith;Dracaena Marginata;1;20,75;CUSTOMER_ORDER;Global Supplies Inc;STANDARD;Fast Delivery Ltd;103,33;PICKED_UP;01.01.2024;10.01.2024;PAYPAL;
+John;Smith;Aloe Vera;2;15,3;CUSTOMER_ORDER;Global Supplies Inc;STANDARD;Fast Delivery Ltd;103,33;PICKED_UP;01.01.2024;10.01.2024;PAYPAL;
+Michael;Johnson;Areca Palm;3;30;CUSTOMER_ORDER;Global Supplies Inc;STANDARD;Fast Delivery Ltd;95,99;PICKED_UP;13.09.2024;20.09.2024;DEBIT_CARD;AUTUMN_2024
+Michael;Johnson;Ficus Elastica;1;25,99;CUSTOMER_ORDER;Global Supplies Inc;STANDARD;Fast Delivery Ltd;95,99;PICKED_UP;13.09.2024;20.09.2024;DEBIT_CARD;AUTUMN_2024
+Liam;Nguyen;Ficus Elastica;3;25,99;CUSTOMER_ORDER;Logistics Pro GmbH;STANDARD;Express Delivery Services;290,94;PICKED_UP;01.01.2025;06.01.2025;DEBIT_CARD;
+Liam;Nguyen;Self-Watering Pot;3;30,99;CUSTOMER_ORDER;Logistics Pro GmbH;STANDARD;Express Delivery Services;290,94;PICKED_UP;01.01.2025;06.01.2025;DEBIT_CARD;
+Liam;Nguyen;Hedge Trimmer;1;120;CUSTOMER_ORDER;Logistics Pro GmbH;STANDARD;Express Delivery Services;290,94;PICKED_UP;01.01.2025;06.01.2025;DEBIT_CARD;
+Henry;Kim;Ficus Elastica;5;25,99;CUSTOMER_ORDER;Logistics Pro GmbH;FAST;Fast Delivery Ltd;130,7;PICKED_UP;02.10.2024;20.10.2024;PAYPAL;AUTUMN_2024
+Henry;Kim;Dracaena Marginata;1;20,75;CUSTOMER_ORDER;Logistics Pro GmbH;FAST;Fast Delivery Ltd;130,7;PICKED_UP;02.10.2024;20.10.2024;PAYPAL;AUTUMN_2024
+plantstore_name;plantstore_surname;Ficus Elastica;100;1,99;SUPPLY_ORDER;Global Supplies Inc;FAST;Fast Delivery Ltd;199;PICKED_UP;01.11.2024;04.11.2024;BANK_TRANSFER;
+plantstore_name;plantstore_surname;Areca Palm;100;1,99;SUPPLY_ORDER;Global Supplies Inc;FAST;Fast Delivery Ltd;199;PICKED_UP;01.11.2024;04.11.2024;BANK_TRANSFER;
+plantstore_name;plantstore_surname;Hanging Basket;50;0,99;SUPPLY_ORDER;Logistics Pro GmbH;STANDARD;Express Delivery Services;49,5;PICKED_UP;01.07.2024;15.07.2024;BANK_TRANSFER;
+plantstore_name;plantstore_surname;Self-Watering Pot;50;0,99;SUPPLY_ORDER;Logistics Pro GmbH;STANDARD;Express Delivery Services;49,5;PICKED_UP;01.07.2024;15.07.2024;BANK_TRANSFER;

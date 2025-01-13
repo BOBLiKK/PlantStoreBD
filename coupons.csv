@@ -1,0 +1,5 @@
+﻿coupon_code;description;discount_amount;start_date;end_date;minimum_purchase_amount;discount_type
+WINTER_2025;Winter sale;10;01.12.2024;28.02.2025;100;PERCENTAGE
+WELCOME;Welcome discount coupon;15;01.01.2025;01.05.2025;50;PERCENTAGE
+AUTUMN_2024;Autumn sale;20;01.09.2024;30.11.2024;50;FIXED
+SPRING_2025;Spring sale;30;01.03.2025;31.05.2025;200;FIXED
