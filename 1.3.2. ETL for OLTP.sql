@@ -1,3 +1,6 @@
+-------Filling Addresses data from all files containing addresses----------
+
+
 INSERT INTO Addresses (country, region, city, street, house, postal_code)
 SELECT DISTINCT 
     t.country, 
@@ -64,6 +67,9 @@ WHERE t.warehouse_country IS NOT NULL
 
 
 
+---------------Filling  Contacts data from all tables containing contacts info--------------------------
+
+
 INSERT INTO Contacts (contact_name, contact_surname, contact_address_id, contact_email, contact_phone_number, contact_type)
 SELECT
     t.name,
@@ -104,6 +110,9 @@ JOIN Addresses a
 WHERE t.contact_type IN ('ADMIN', 'CUSTOMER', 'DELIVERY_PROVIDER', 'SUPPLIER', 'MANUFACTURER')
 ON CONFLICT (contact_email)
 DO NOTHING;
+
+
+----------------Filling Details Tables--------------------------------------------------------
 
 
 INSERT INTO Business_Partner_Details (
@@ -150,6 +159,9 @@ WHERE c.contact_type = 'CUSTOMER'
 ON CONFLICT (customer_card_number) DO NOTHING;
 
 
+
+------------------Inserting Warehouses info-------------------------------
+
 INSERT INTO Warehouses (
     supplier_id,
     warehouse_address_id
@@ -177,6 +189,8 @@ WHERE
     AND w.warehouse_address_id IS NULL;
 
 
+
+--------------------Inserting coupons data---------------------------
 
 INSERT INTO Coupons (
     coupon_code,
