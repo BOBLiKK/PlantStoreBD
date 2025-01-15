@@ -31,7 +31,7 @@ FROM SERVER foreign_db_server_2
 INTO local_schema;
 
 ------------------------------------------------------------------
--- Step 0: Create staging tables (optional)
+-- Step 0: Create staging tables 
 
 DROP TABLE IF EXISTS staging_dim_locations;
 DROP TABLE IF EXISTS staging_dim_suppliers;
@@ -44,7 +44,6 @@ DROP TABLE IF EXISTS staging_fact_orders;
 DROP TABLE IF EXISTS staging_fact_supply_orders;
 
 
--- Step 0: Create staging tables (optional)
 -- Staging tables are temporary and can be dropped after processing
 CREATE TEMP TABLE staging_dim_locations AS SELECT * FROM dim_locations WHERE 1 = 0;
 CREATE TEMP TABLE staging_dim_suppliers AS SELECT * FROM dim_suppliers WHERE 1 = 0;
@@ -194,7 +193,7 @@ SELECT customer_id, customer_name, customer_surname, customer_email, customer_ad
 FROM staging_dim_customers;
 
 
--- Вставка уникальных дат из Orders в staging таблицу
+-- Step 7: Load staging_dim_dates
 INSERT INTO staging_dim_dates (date, day, month, year, quarter, day_of_week, is_holiday)
 SELECT 
     DISTINCT o.order_date AS order_date,
@@ -209,7 +208,7 @@ SELECT
     END AS is_holiday
 FROM local_schema.Orders o;
 
--- Вставка уникальных данных из staging таблицы в dim_dates
+-- Insert validated and deduplicated data into target table
 INSERT INTO dim_dates (date, day, month, year, quarter, day_of_week, is_holiday)
 SELECT 
     sd.date AS date,
@@ -226,13 +225,9 @@ WHERE NOT EXISTS (
     WHERE dd.date = sd.date
 );
 
-delete from staging_fact_orders
-delete from fact_orders
-select * from staging_fact_orders
-select * from fact_orders
 
 
--- Step 7: Load staging_fact_orders
+-- Step 8: Load staging_fact_orders
 INSERT INTO staging_fact_orders (supplier_SK, product_SK, delivery_provider_SK, customer_SK, date_SK, item_quantity, item_total, cumulative_total)
 SELECT 
     ds.supplier_SK,
@@ -270,7 +265,7 @@ INSERT INTO fact_orders (supplier_SK, product_SK, delivery_provider_SK, customer
 SELECT supplier_SK, product_SK, delivery_provider_SK, customer_SK, date_SK, item_quantity, item_total, cumulative_total
 FROM staging_fact_orders;
 
--- Step 1: Load staging_fact_supply_orders
+-- Step 9: Load staging_fact_supply_orders
 INSERT INTO staging_fact_supply_orders (warehouse_SK, product_SK, delivery_provider_SK, date_SK, item_quantity, item_total, cumulative_total)
 SELECT 
     dw.warehouse_SK,
@@ -300,13 +295,13 @@ WHERE od.order_type = 'SUPPLY_ORDER'
       AND fso.date_SK = dd.date_SK
 );
 
--- Step 2: Insert validated and deduplicated data into target table
+-- Insert validated and deduplicated data into target table
 INSERT INTO fact_supply_orders (warehouse_SK, product_SK, delivery_provider_SK, date_SK, item_quantity, item_total, cumulative_total)
 SELECT warehouse_SK, product_SK, delivery_provider_SK, date_SK, item_quantity, item_total, cumulative_total
 FROM staging_fact_supply_orders;
 
 
--- Заполнение таблицы agg_sales_by_category
+-- Step 10: Fill agregated table:
 INSERT INTO agg_sales_by_category (
     product_SK,
     category_name,
@@ -322,8 +317,8 @@ SELECT
     dp.subcategory_name,
     dl.location_SK,
     dd.date_SK,
-    SUM(fo.item_total) AS total_sales_amount,  -- Общая сумма продаж
-    SUM(fo.item_quantity) AS total_quantity   -- Общее количество товаров
+    SUM(fo.item_total) AS total_sales_amount,  
+    SUM(fo.item_quantity) AS total_quantity   
 FROM
     fact_orders fo
 JOIN dim_products dp ON fo.product_SK = dp.product_SK
